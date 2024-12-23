@@ -1,7 +1,7 @@
 object Versions {
-    const val kotlin = "1.8.10"
+    const val kotlin = "2.0.0"
     const val androidMinSdk = 23
-    const val androidCompileSdk = 34
+    const val androidCompileSdk = 35
     const val androidTargetSdk = androidCompileSdk
 }
 

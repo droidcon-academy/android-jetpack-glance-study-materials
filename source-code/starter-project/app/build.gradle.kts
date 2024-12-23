@@ -4,6 +4,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlinx-serialization")
+    id("org.jetbrains.kotlin.plugin.compose") version ("2.0.0")
 }
 
 android {
@@ -23,7 +24,7 @@ android {
         buildConfigField(
             "String",
             "WEATHER_API_KEY",
-            gradleLocalProperties(rootDir).getProperty("WEATHER_API_KEY") ?: ""
+            gradleLocalProperties(rootDir, providers).getProperty("WEATHER_API_KEY") ?: ""
         )
     }
 
